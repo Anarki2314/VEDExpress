@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>VEDEx press</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel='stylesheet' type='text/css' media='screen' href='css/itc-slider.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/general.css'>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;900&family=Roboto:wght@300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header class="section header_navigation">
+
+            <div class="header_menu">
+
+                <div class="header_logo_block">
+                    <a href="/" class="header_logo_link"><svg class="header_logo_img">
+                            <use xlink:href="sprite.svg#logo">
+                        </svg></a>
+                </div>
+
+                <nav class="header_nav">
+                    <div class="header_nav_link_block"><a href="#about" class="header_nav_link">О нас</a></div>
+                    <div class="header_nav_link_block"><a href="#" class="header_nav_link" onclick="document.querySelector('.header_nav_link_services_drop-menu').classList.toggle('active')">Услуги</a>
+                        <div class="header_nav_link_services_drop-menu">
+                            <ul>
+                                <li><a href="#services" onclick="document.querySelector('.header_nav_link_services_drop-menu').classList.toggle('active')">Контрактная логистика</a></li>
+                                <li><a href="#services" onclick="document.querySelector('.header_nav_link_services_drop-menu').classList.toggle('active')">ВЭД - аутсорсинг</a></li>
+                                <li><a href="#services" onclick="document.querySelector('.header_nav_link_services_drop-menu').classList.toggle('active')">Таможенное оформление</a></li>
+                                <li><a href="#services" onclick="document.querySelector('.header_nav_link_services_drop-menu').classList.toggle('active')">Логистика для дата-центров</a></li>
+                                <li><a href="#services" onclick="document.querySelector('.header_nav_link_services_drop-menu').classList.toggle('active')">Страхование</a></li>
+                                <li><a href="#services" onclick="document.querySelector('.header_nav_link_services_drop-menu').classList.toggle('active')">Сертификация</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header_nav_link_block"><a href="#transp" class="header_nav_link">Международные перевозки</a>
+                    </div>
+                    <div class="header_nav_link_block"><a href="#business" class="header_nav_link">Решение для бизнеса</a></div>
+                    <div class="header_nav_link_block"><a href="#goods" class="header_nav_link">Сборные грузы</a></div>
+                </nav>
+
+                <div class="header_menu_lang">
+                    <div class="header_language" onclick="document.querySelector('.header_nav_link_services_drop-menu.lang').classList.toggle('active')">
+                        <img src="img/rus.png" width="15" height="15px" alt=""> Ru <span class="header_language_arrow"></span>
+                        <div class="header_nav_link_services_drop-menu lang">
+                            <ul>
+                                <li onclick="document.querySelector('.header_nav_link_services_drop-menu.lang').classList.toggle('active')"><img src="img/ger.png" width="15" height="15px" alt=""> De </li>
+                                <li onclick="document.querySelector('.header_nav_link_services_drop-menu.lang').classList.toggle('active')"><img src="img/en.png" width="15" height="15px" alt=""> En </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header_menu_btn open_menu" onclick="menu_close()">
+                        <span class="header_menu_btn_circles"><svg class="btn_circles_img">
+                                <use xlink:href="sprite.svg#menu_circles">
+                            </svg></span> Меню
+                    </div>
+                </div>
+
+            </div>
+
+        </header>
+    <div class="menu_full">
+        <div class="header_navigation header_menu_full active">
+            <div class="header_menu">
+
+                <div class="header_logo_block">
+                    <a href="/" class="header_logo_link"><svg class="header_logo_img">
+                            <use xlink:href="sprite.svg#logo_menu">
+                        </svg></a>
+                </div>
+
+
+
+                <div class="header_menu_lang">
+                    <div class="header_language" onclick="document.querySelector('.header_nav_link_services_drop-menu.lang.full').classList.toggle('active')">
+                        <img src="img/rus.png" width="15" height="15px" alt=""> Ru <span class="header_language_arrow"></span>
+                        <div class="header_nav_link_services_drop-menu lang full">
+                            <ul>
+                                <li onclick="document.querySelector('.header_nav_link_services_drop-menu.lang.full').classList.toggle('active')"><img src="img/ger.png" width="15" height="15px" alt=""> De </li>
+                                <li onclick="document.querySelector('.header_nav_link_services_drop-menu.lang.full').classList.toggle('active')"><img src="img/en.png" width="15" height="15px" alt=""> En </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header_menu_btn open_menu" onclick="menu_close()">
+                        <span class="header_menu_btn_circles"><svg class="btn_circles_img">
+                                <use xlink:href="sprite.svg#menu_circles2">
+                            </svg></span> Меню
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="menu_full_center_container">
+            <div class="menu_full_center_left">
+                <ul class="menu_full_center_left_list">
+                    <li><a href="#about" onmouseover="menu_link(this)" onmouseleave="menu_link(this)" onclick="menu_close()">О нас</a></li>
+                    <li><a href="#services" onmouseover="menu_link(this)" onmouseleave="menu_link(this)" onclick="menu_close()">Услуги</a></li>
+                    <li><a href="#transp" onmouseover="menu_link(this)" onmouseleave="menu_link(this)" onclick="menu_close()">Международные перевозки</a></li>
+                    <li><a href="#business" onmouseover="menu_link(this)" onmouseleave="menu_link(this)" onclick="menu_close()">Решение для бизнеса</a></li>
+                    <li><a href="#goods" onmouseover="menu_link(this)" onmouseleave="menu_link(this)" onclick="menu_close()">Сборные грузы</a></li>
+                    <li><a href="#goods" onmouseover="menu_link(this)" onmouseleave="menu_link(this)" onclick="menu_close()">Документы</a></li>
+                    <li><a href="#goods" onmouseover="menu_link(this)" onmouseleave="menu_link(this)" onclick="menu_close()">Информация</a></li>
+                </ul>
+            </div>
+            <div class="menu_full_center_right">
+                <ul class="menu_full_center_right_list">
+
+                    <ul class="services_menu_list">
+                        <li class="services_menu_list_item ">
+                            Контрактная логистика ВЭД</li>
+                        <li class="services_menu_list_item"> Забор и
+                            упаковка груза</li>
+                        <li class="services_menu_list_item"> Осмотр и
+                            инспекция груза</li>
+                        <li class="services_menu_list_item"> Хранение</li>
+                        <li class="services_menu_list_item"> Таможенное
+                            оформление:</li>
+                        <li>
+                            <ul class="services_menu_list_customs">
+                                <li>стандартный ввоз</li>
+                                <li>временный ввоз</li>
+                                <li>транзит</li>
+                                <li>re-export</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+
+        <div class="social_block menu_full_social_block">
+            <div class="social_block_links">
+                <ul class="social_block_links_list">
+                    <li><a href="/" class="social_block_link"><svg class="social_block_link_img">
+                                <use xlink:href="sprite.svg#vk">
+                            </svg></a></li>
+                    <li><a href="/" class="social_block_link"><svg class="social_block_link_img">
+                                <use xlink:href="sprite.svg#facebook">
+                            </svg></a></li>
+                    <li><a href="/" class="social_block_link"><svg class="social_block_link_img">
+                                <use xlink:href="sprite.svg#youtube">
+                            </svg></a></li>
+                </ul>
+            </div>
+            <div class="menu_full_social_block_container">
+                <div class="menu_full_social_block_contacts">
+                    <div class="menu_full_social_block_email"><svg class="btn_circles_img">
+                        <use xlink:href="sprite.svg#email_menu">
+                    </svg>info@vedexpress.com</div>
+                    <div class="menu_full_social_block_time"><svg class="btn_circles_img">
+                        <use xlink:href="sprite.svg#clock_menu">
+                    </svg>пн-вс: 10.00-18.00</div>
+                </div>
+                <div class="social_block_tel">
+                    +7 499 350 10 12
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+        <section class="section main" name="about">
+            <div class="main_container section_container">
+                <h4 class="main_subtitle section_subtitle">Решим любую сложную задачу !</h4>
+                <h1 class="main_title section_title">
+                    весь комплекс <br><span class="main_title_markup">логистических</span> <br> услуг
+                </h1>
+                <ul class="main_text_ul">
+                    <li>Нам доверяют организацию поставок и грузоперевозок начиная от бытовых товаров и заканечивая
+                        дорогосирящим оборудованием.</li>
+                    <li>Осуществляем полный комплекс услуг "под ключ" от закупки у поставщика до доставки на ваш адрес.
+                        можем подключиться на любом этапе грузоперевозки</li>
+                    <li>ВЭД - аутсорсинг</li>
+                    <li>Работаем с грузами по всему миру</li>
+                </ul>
+            </div>
+
+            <div class="social_block">
+                <div class="social_block_links">
+                    <ul class="social_block_links_list">
+                        <li><a href="/" class="social_block_link"><svg class="social_block_link_img">
+                                    <use xlink:href="sprite.svg#vk">
+                                </svg></a></li>
+                        <li><a href="/" class="social_block_link"><svg class="social_block_link_img">
+                                    <use xlink:href="sprite.svg#facebook">
+                                </svg></a></li>
+                        <li><a href="/" class="social_block_link"><svg class="social_block_link_img">
+                                    <use xlink:href="sprite.svg#youtube">
+                                </svg></a></li>
+                    </ul>
+                </div>
+                <div class="social_block_tel">
+                    +7 499 350 10 12
+                </div>
+            </div>
+        </section>
+
+        <section class="section work" id="about">
+            <div class="work_container section_container">
+                <h4 class="work_subtitle section_subtitle">Как мы</h4>
+                <h1 class="work_title section_title">
+                    <svg class="btn_circles_img">
+                        <use xlink:href="sprite.svg#menu_circles">
+                    </svg> Работаем
+                </h1>
+                <article class="work_text section_text">
+                    Наша логистическая компания организует поставку, грузоперевозку и таможенную очистку грузов.
+                    Нам доверяют грузы различного назначения: компьютеры, серверы и комплектующие к ним, системы
+                    видеонаблюдения, комплектующие для телекоммуникационных систем связи, досмотровое рентгеновское
+                    оборудование, сельскохозяйственное оборудование и комплектующие к нему, хозяйственные товары
+                    бытового назначения, продовольственные товары и прочие грузы.
+                </article>
+                <ul class="work_list">
+                    <li>
+                        <span class="work_list_num">01</span>
+                        <div class="work_list_title">Расчет сделки</div>
+                        <div class="work_list_text">
+                            Клиент заполняет Заявку. <br>
+                            Наш Менеджер рассчитывает стоимость перевозки и сопутствующих услуг.
+                        </div>
+                    </li>
+                    <li>
+                        <span class="work_list_num">02</span>
+                        <h4 class="work_list_title">Подписание договора</h4>
+                        <div class="work_list_text">
+                            Наш Менеджер подготавливает Договор на основании Заявки.
+                            Подписание Договора может осуществляться с помощью ЭЦП
+                        </div>
+                    </li>
+                    <li>
+                        <span class="work_list_num">03</span>
+                        <h4 class="work_list_title">Оплата поставщику</h4>
+                        <div class="work_list_text">
+                            Мы можем взять на себя все хлопоты по заключению внешнеэкономического контракта и
+                            осуществлению валютных переводов Вашему Поставщику.
+                        </div>
+                    </li>
+                    <li>
+                        <span class="work_list_num">04</span>
+                        <h4 class="work_list_title">Перевозка и томожня</h4>
+                        <div class="work_list_text">
+                            Наш Менеджер проводит мониторинг исполнения перевозки и сопутствующих услуг на всех этапах
+                            перевозки и таможенной очистки (если включена в заявку), а также консультирует. Клиента по
+                            комплектности и правильности оформления необходимых для перевозки (таможенной очистки)
+                            документов.
+                        </div>
+                    </li>
+                    <li>
+                        <span class="work_list_num">05</span>
+                        <h4 class="work_list_title">Документальное сопровождение</h4>
+                        <div class="work_list_text">
+                            Наш Менеджер подготавливает и передает Клиенту полный комплект необходимых документов по
+                            выполненной перевозке и сопутствующим услугам.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section questions">
+            <div class="questions_container">
+                <h4 class="questions_title">Остались вопросы?</h4>
+                <div class="questions_text">По всем вопросам, вы можете обратиться к менеджеру компании. <br>
+                    Мы свяжемся с вами в удобное для вас время</div>
+
+                <form class="questions_form">
+                    <textarea placeholder="Сообщение"></textarea>
+                    <input type="text" placeholder="Ваше имя"> <br>
+                    <input type="text" placeholder="Email"><br>
+
+                    <div class="questions_form_warn">
+                        <div class="questions_form_warn_text">
+                            Нажимая кнопку “Отправить”, вы подтверждаете, что согласны с <span
+                                class="questions_form_warn_text"> политикой конфиденциальности</span>
+                        </div>
+                        <button class="questions_form_btn">Отправить</button>
+                    </div>
+
+                </form>
+            </div>
+            <div class="questions_bg">
+            </div>
+        </section>
+        <section class="section offer">
+            <div class="offer_container section_container">
+                <h4 class="offer_subtitle section_subtitle">Как мы</h4>
+                <h1 class="offer_title section_title">
+                    <svg class="btn_circles_img">
+                        <use xlink:href="sprite.svg#menu_circles">
+                    </svg> предлагаем
+                </h1>
+                <article class="offer_text section_text">
+                    Наша логистическая компания оказывает услуги ВЭД аутсорсинга и транспортной логистики.
+                    Наши менеджеры урегулируют все вопросы по ВЭД и организуют международную грузоперевозку любого
+                    товара, в том числе: любой сложности и любым видом транспорта, позволяя Вашей организации
+                    сконцентрироваться на ведении собственного бизнеса.
+                </article>
+                <article class="offer_text section_text">
+                    Мы возьмем на себя как организацию разовой поставки, так и обеспечение бесперебойного снабжения
+                    Вашего бизнеса товарами, сырьем, оборудованием. Мы можем осуществить доставку товаров из-за рубежа
+                    «под ключ»: поиск поставщика, заключение контракта (как на себя, так и на Клиента), валютный
+                    перевод, сертификация, таможенная очистка, доставка “от двери до двери”.
+                </article>
+            </div>
+        </section>
+
+        <section class="section services" id="services">
+            <div class="services_container section_container">
+
+                <div class="services_menu">
+                    <div class="services_container_img"><img src="img/" alt=""></div>
+                    <h4 class="services_subtitle section_subtitle">Почему нас выбирают</h4>
+                    <h1 class="services_menu_title section_title">
+                        <svg class="btn_circles_img">
+                            <use xlink:href="sprite.svg#services_circles">
+                        </svg> УСЛУГИ
+                    </h1>
+
+                    <ul class="services_menu_list">
+                        <li class="services_menu_list_item active"> <span class="services_menu_list_num">01</span>
+                            Контрактная логистика ВЭД</li>
+                        <li class="services_menu_list_item"> <span class="services_menu_list_num">02</span>Забор и
+                            упаковка груза</li>
+                        <li class="services_menu_list_item"> <span class="services_menu_list_num">03</span>Осмотр и
+                            инспекция груза</li>
+                        <li class="services_menu_list_item"> <span class="services_menu_list_num">04</span>Хранение</li>
+                        <li class="services_menu_list_item"> <span class="services_menu_list_num">05</span>Таможенное
+                            оформление:</li>
+                        <li>
+                            <ul class="services_menu_list_customs">
+                                <li>стандартный ввоз</li>
+                                <li>временный ввоз</li>
+                                <li>транзит</li>
+                                <li>re-export</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="services_main_block">
+                    <h4 class="services_main_block_title">
+                        Контрактная логистика
+                    </h4>
+                    <div class="services_main_block_undertitle_text">
+                        Мы возьмем на аутсорсинг функции ВЭД отдела Вашей компании:
+                        ВЭД - ВнешнеЭкономическая Деятельность
+                    </div>
+                    <ul class="services_main_block_list">
+                        <li>Работа с импортными Поставщиками/Покупателями, а именно: поиск партнеров, ведение
+                            переговоров по условиям сделки, подготовка к подписанию внешнеэкономических контрактов</li>
+                        <li>Управление движением финансов при реализации внешнеэкономичсекой деятельности, что является
+                            важной составляющей логистического процесса и может существенно влиять на итоговый
+                            результат. Участие на всех этапах финансового маршрута, делая его оптимальным и корректным
+                        </li>
+                        <li>Управление затратами и прибылью по внешнеэкономическим операциям.</li>
+                        <li>Оказание услуг ВЭД-агента. (агента по внешнеэкономической деятельности)</li>
+                        <li>Оказание услуг Импортера/Экспортера.</li>
+                    </ul>
+                    <div class="services_main_block_next">Следующее</div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section transport" id="transp">
+            <div class="transport_container section_container">
+                <h4 class="transport_subtitle section_subtitle">Решениe</h4>
+                <h1 class="transport_title section_title">
+                    <svg class="btn_circles_img">
+                        <use xlink:href="sprite.svg#menu_circles">
+                    </svg> МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ грузов
+                </h1>
+
+                <a class="transport_text section_text">Организуем доставку Вашего груза “от двери до двери” любым видом
+                    транспорта. Используем комбинацию разных видов транспорта в цепочке поставки (мультимодальные
+                    перевозки)
+                    с учетом оптимизации стоимости перевозки и соблюдения основных логистических требований и
+                    критериев.</a>
+            </div>
+
+
+            <div class="transport_kinds_container">
+                <div class="transport_kind">
+                    <div class="transport_kind_img_container">
+                        <img src="img/kind1.png" alt="" class="transport_kind_img">
+                    </div>
+                    <div class="transport_kind_text_container">
+
+                        <div class="transport_kind_title">
+                            авиа
+                        </div>
+                        <div class="transport_kind_text">Полный спектр услуг
+                            по консолидации авиа грузов
+                            и прямому сообщению.</div>
+                    </div>
+                </div>
+                <div class="transport_kind">
+                    <div class="transport_kind_img_container">
+                        <img src="img/kind2.png" alt="" class="transport_kind_img">
+                    </div>
+                    <div class="transport_kind_text_container">
+
+                        <div class="transport_kind_title">
+                            море
+                        </div>
+                        <div class="transport_kind_text">Комплексные решения для
+                            морских грузов LCL и FCL
+                            в любом направлении</div>
+                    </div>
+                </div>
+                <div class="transport_kind">
+                    <div class="transport_kind_img_container">
+                        <img src="img/kind3.png" alt="" class="transport_kind_img">
+                    </div>
+                    <div class="transport_kind_text_container">
+
+                        <div class="transport_kind_title">
+                            авто
+                        </div>
+                        <div class="transport_kind_text">LTL-решения, обеспечивающие
+                            комплексную доставку. Европа, Россия,
+                            Северная Африка, страны СНГ, Китай</div>
+                    </div>
+                </div>
+                <div class="transport_kind">
+                    <div class="transport_kind_img_container">
+                        <img src="img/kind4.png" alt="" class="transport_kind_img">
+                    </div>
+                    <div class="transport_kind_text_container">
+
+                        <div class="transport_kind_title">
+                            жд
+                        </div>
+                        <div class="transport_kind_text">Решения LCL и FCL,
+                            обеспечивающие быструю доставку из Китая в Россию и Европу</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section business" id="business">
+            <div class="business_container work_container section_container">
+                <h4 class="business_subtitle work_subtitle section_subtitle">Решения</h4>
+                <h1 class="business_title work_title section_title">
+                    <svg class="btn_circles_img">
+                        <use xlink:href="sprite.svg#menu_circles">
+                    </svg> для БИЗНЕСА
+                </h1>
+                <article class="business_text work_text section_text">
+                    Мы готовы предложить нестандартные решения для Вашего бизнеса, а также предоставить полный комплекс
+                    сопутствующих услуг.
+                </article>
+                <ul class="work_list">
+                    <li>
+                        <span class="work_list_num">01</span>
+                        <div class="work_list_title">DATA-Center</div>
+                        <div class="work_list_text">
+                            Осуществляем управление логистическими процедурами Клиентов DATA Ceters
+                        </div>
+                    </li>
+                    <li>
+                        <span class="work_list_num">02</span>
+                        <h4 class="work_list_title">EOR-IOR агент</h4>
+                        <div class="work_list_text">
+                            Услуги импортера/экспортера <br>
+                            в России и Европе.
+                        </div>
+                    </li>
+                    <li>
+                        <span class="work_list_num">03</span>
+                        <h4 class="work_list_title">Сертификация</h4>
+                        <div class="work_list_text">
+                            Подготовим пакет необходимых разрешительных документов для таможенного оформления груза -
+                            сертификаты, ДС, нотификации, лицензии.
+                        </div>
+                    </li>
+                    <li>
+                        <span class="work_list_num">04</span>
+                        <h4 class="work_list_title">Страхование</h4>
+                        <div class="work_list_text">
+                            Поможем в выборе страховой компании для <br> страхования груза.
+                        </div>
+                    </li>
+                    <li>
+                        <span class="work_list_num">05</span>
+                        <h4 class="work_list_title">Global Trading Agent</h4>
+                        <div class="work_list_text">
+                            Предлагаем услуги Международного Торгового Агента. <br>
+                            Мы проведем исследование международного рынка по Вашему запросу,
+                            проконсультируем Вас по выбору Поставщика, проведению торгов и
+                            закупочных процедур. Мы готовы вести переговоры с потенциальными партнерами и заключать с
+                            ними контракты, как Ваш Агент.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section class="section parthner">
+            <div class="parthner_container section_container">
+                <h4 class="parthner_subtitle work_subtitle section_subtitle">Наши</h4>
+                <h1 class="parthner_title work_title section_title">
+                    <svg class="btn_circles_img">
+                        <use xlink:href="sprite.svg#menu_circles">
+                    </svg> партнеры
+                </h1>
+
+                <div class="parthner_slider_container">
+                    <div class="itc-slider" data-slider="itc-slider" data-loop="false" data-autoplay="false">
+                        <div class="itc-slider__wrapper">
+                            <div class="itc-slider__items">
+                                <div class="itc-slider__item">
+                                    <img src="img/parthner1.png" alt="" class="parthner_img">
+                                </div>
+                                <div class="itc-slider__item">
+                                    <img src="img/parthner2.png" alt="" class="parthner_img">
+                                </div>
+                                <div class="itc-slider__item">
+                                    <img src="img/parthner3.png" alt="" class="parthner_img">
+                                </div>
+                                <div class="itc-slider__item">
+                                    <img src="img/parthner4.png" alt="" class="parthner_img">
+                                </div>
+                                <div class="itc-slider__item">
+                                    <img src="img/parthner1.png" alt="" class="parthner_img">
+                                </div>
+                                <div class="itc-slider__item">
+                                    <img src="img/parthner2.png" alt="" class="parthner_img">
+                                </div>
+                                <div class="itc-slider__item">
+                                    <img src="img/parthner3.png" alt="" class="parthner_img">
+                                </div>
+                                <div class="itc-slider__item">
+                                    <img src="img/parthner4.png" alt="" class="parthner_img">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="itc-slider__btn itc-slider__btn_prev"></button>
+                        <button class="itc-slider__btn itc-slider__btn_next"></button>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer class="footer">
+            <div class="footer_container">
+                <div class="footer_left">
+                    <div class="footer_left_container_top">
+                        <div class="footer_left_services">
+                            <h4 class="footer_subtitle">
+                                Услуги
+                            </h4>
+                            <ul class="footer_left_services_list">
+                                <li>Контрактная логистика</li>
+                                <li>Забор и упаковка груза</li>
+                                <li>Осмотр и инспекция груза</li>
+                                <li>Хранение</li>
+                                <li>Таможенное оформление</li>
+                                <li>
+                                    <ul class="footer_left_services_list_customs">
+                                        <li>стандартный ввоз</li>
+                                        <li>временный ввоз</li>
+                                        <li>транзит</li>
+                                        <li>re-export</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer_left_goods">
+                            <h4 class="footer_subtitle">
+                                Сборные грузы
+                            </h4>
+                            <ul class="footer_left_goods_list">
+                                <li>Доставка из/в Европу</li>
+                                <li>Доставка в СНГ</li>
+                                <li>Доставка из Китая</li>
+                                <li>Доставка из Кореи</li>
+                                <li>Доставка из Израиля</li>
+                                <li>Доставка из Украины</li>
+                                <li>Доставка из Америки</li>
+                                <li>Доставка из Канады</li>
+                                <li>Доставка из/в Северную Африку</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="footer_left_contacts">
+                        <div class="footer_subtitle">
+                            Контакты
+                        </div>
+                        <ul class="footer_left_contacts_list">
+                            <li> <svg><use xlink:href="sprite.svg#port"></use></svg>ООО «ВЭДЭКСПРЕСС»</li>
+                            <li> <svg><use xlink:href="sprite.svg#ok"></use></svg>ИНН 7811767459</li>
+                            <li> <svg><use xlink:href="sprite.svg#address"></use></svg>192029, г.Санкт-Петербург, пр. Обуховской обороны д.76,корп.7, лит.А, пом.
+                                2313Б</li>
+                            <li> <svg><use xlink:href="sprite.svg#email2"></use></svg>info@vedexpress.com</li>
+                            <li> <svg><use xlink:href="sprite.svg#clock"></use></svg>пн-вс: 10.00-18.00</li>
+                        </ul>
+                    </div>
+                    <div class="footer_left_agree">
+                        <span class="footer_left_agree_terms">
+                            Пользовательское соглашение
+                        </span>
+                        <span class="footer_left_agree_privacy">
+                            Политика конфиденциальности
+                        </span>
+                    </div>
+
+                </div>
+                <div class="footer_right">
+                    <h4 class="footer_subtitle">
+                        Наши офисы
+                    </h4>
+                    <div class="footer_right_container">
+                        <div class="footer_right_container_item">
+                            <ul class="footer_right_container_item_list">
+                                <li class="footer_subtitle"><svg>
+                                        <use xlink:href="sprite.svg#mark"></use>
+                                    </svg>Novorossiysk</li>
+                                <li><svg>
+                                        <use xlink:href="sprite.svg#email"></use>
+                                    </svg>info@vedexpress.com </li>
+                            </ul>
+                        </div>
+                        <div class="footer_right_container_item">
+                            <ul class="footer_right_container_item_list">
+                                <li class="footer_subtitle"><svg>
+                                        <use xlink:href="sprite.svg#mark"></use>
+                                    </svg>Vladivostok</li>
+                                <li><svg>
+                                        <use xlink:href="sprite.svg#email"></use>
+                                    </svg>info@vedexpress.com </li>
+                            </ul>
+                        </div>
+                        <div class="footer_right_container_item">
+                            <ul class="footer_right_container_item_list">
+                                <li class="footer_subtitle"><svg>
+                                        <use xlink:href="sprite.svg#mark"></use>
+                                    </svg>Domodedovo</li>
+                                <li><svg>
+                                        <use xlink:href="sprite.svg#email"></use>
+                                    </svg>info@vedexpress.com </li>
+                            </ul>
+                        </div>
+                        <div class="footer_right_container_item">
+                            <ul class="footer_right_container_item_list">
+                                <li class="footer_subtitle"><svg>
+                                        <use xlink:href="sprite.svg#mark"></use>
+                                    </svg>Sheremetyevo</li>
+                                <li><svg>
+                                        <use xlink:href="sprite.svg#email"></use>
+                                    </svg>info@vedexpress.com </li>
+                            </ul>
+                        </div>
+                        <div class="footer_right_container_item">
+                            <ul class="footer_right_container_item_list">
+                                <li class="footer_subtitle"><svg>
+                                        <use xlink:href="sprite.svg#mark"></use>
+                                    </svg>Tel-aviv</li>
+                                <li><svg>
+                                        <use xlink:href="sprite.svg#email"></use>
+                                    </svg>info@vedexpress.com </li>
+                            </ul>
+                        </div>
+                        <div class="footer_right_container_item">
+                            <ul class="footer_right_container_item_list">
+                                <li class="footer_subtitle"><svg>
+                                        <use xlink:href="sprite.svg#mark"></use>
+                                    </svg>Shanghai</li>
+                                <li><svg>
+                                        <use xlink:href="sprite.svg#email"></use>
+                                    </svg>info@vedexpress.com </li>
+                            </ul>
+                        </div>
+                        <div class="footer_right_container_item">
+                            <ul class="footer_right_container_item_list">
+                                <li class="footer_subtitle"><svg>
+                                        <use xlink:href="sprite.svg#mark"></use>
+                                    </svg>Tunis</li>
+                                <li><svg>
+                                        <use xlink:href="sprite.svg#email"></use>
+                                    </svg>info@vedexpress.com </li>
+                            </ul>
+                        </div>
+                        <div class="footer_right_container_item">
+                            <ul class="footer_right_container_item_list">
+                                <li class="footer_subtitle"><svg>
+                                        <use xlink:href="sprite.svg#mark"></use>
+                                    </svg>Budapest</li>
+                                <li><svg>
+                                        <use xlink:href="sprite.svg#email"></use>
+                                    </svg>info@vedexpress.com </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/itc-slider.js"></script>
+    <script>
+        ItcSlider.getOrCreateInstance('.itc-slider', {
+            loop: true,
+            swipe: true
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
